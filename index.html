@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vitrine de Medicamentos</title>
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <header class="bg-light py-3">
+    <header class="py-3">
         <div class="container">
-            <h1 class="text-center">Farmácia Bemavita</h1>
-            <h2 class="text-center">Formulário de Cadastro de Medicamentos</h2>
+            <div class="d-inline-flex align-items-center">
+                <img src="assets/logo100.png" alt="Logo da Farmácia" class="logo pr-3">
+                <div>
+                    <h1 class="text-center">Farmácia Bemavita</h1>
+                    <h2 class="text-center">Formulário de Cadastro de Medicamentos</h2>
+                </div>
+            </div>
             <form id="medicamento-form" class="row justify-content-center mt-4">
                 <div class="col-md-4">
-                    <input type="text" id="nome-medicamento" class="form-control" placeholder="Informe o nome do medicamento" required>
+                    <input type="text" id="nome-medicamento" class="form-control"
+                        placeholder="Informe o nome do medicamento" required>
                 </div>
                 <div class="col-md-4">
-                    <input type="text" id="nome-laboratorio" class="form-control" placeholder="Informe o nome do laboratório" required>
+                    <input type="text" id="nome-laboratorio" class="form-control"
+                        placeholder="Informe o nome do laboratório" required>
                 </div>
                 <div class="col-md-2">
                     <input type="number" id="preco" class="form-control" placeholder="Informe o preço" required>
                 </div>
                 <div class="col-md-2">
-                    <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#imagemModal">Cadastrar novo</button>
+                    <button type="button" class="btn btn-primary btn-block" data-toggle="modal"
+                        data-target="#imagemModal">Cadastrar novo</button>
                 </div>
             </form>
         </div>
@@ -30,11 +41,11 @@
 
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-            </ul>
-          </div>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -58,11 +69,13 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label for="url-medicamento">URL da Imagem do Medicamento</label>
-                        <input type="text" class="form-control" id="url-medicamento" placeholder="Informe a URL da imagem do medicamento">
+                        <input type="text" class="form-control" id="url-medicamento"
+                            placeholder="Informe a URL da imagem do medicamento">
                     </div>
                     <div class="form-group">
                         <label for="url-laboratorio">URL da Imagem do Laboratório</label>
-                        <input type="text" class="form-control" id="url-laboratorio" placeholder="Informe a URL da imagem do laboratório">
+                        <input type="text" class="form-control" id="url-laboratorio"
+                            placeholder="Informe a URL da imagem do laboratório">
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -78,4 +91,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
     <script src="script/cadastro_remedio.js"></script>
 </body>
+
 </html>
